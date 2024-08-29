@@ -1,0 +1,52 @@
+@media only screen and (min-width: 768px) {
+    .footer .top-banner-links:not(:last-child):after {
+        background-color: var(--highlight);
+        /* bottom: 7px; */
+        height: 14px;
+    }
+
+    .top-banner-links:not(:last-child):after {
+        content: '';
+        display: block;
+        height: 12px;
+        width: 2px;
+        background-color: #fff;
+        position: absolute;
+        right: -9px;
+        bottom: 5px;
+    }
+}
+
+
+.top-banner {
+    /* background: linear-gradient(48deg, #ffffff 20%, #158D9F 59%, #2696A7 100%); */
+    /* background: linear-gradient(90deg, #EB5E21 0%, #054F59 55.5%, #054F59 100%); */
+
+}
+
+/* css to navigate header specialist according to banner  */
+/* .fade-left {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateX(100%);
+}
+
+.fade-left.active {
+    opacity: 1;
+    transform: translateX(0);
+} */
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-left {
+    animation: fadeLeft 0.5s ease-in-out;
+}

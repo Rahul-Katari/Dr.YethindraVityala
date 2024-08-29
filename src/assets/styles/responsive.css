@@ -1,0 +1,33 @@
+/* CSS for mobile devices only */
+@media only screen and (max-width: 1000px) {
+  p {
+    /* font-size: 0.875rem; */
+  }
+
+  main section {
+    /* margin: 2rem 0; */
+  }
+
+  .container {
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .mobile-gap-x {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main section {
+    /* margin: 4rem 0; */
+  }
+  #homeTestimonials .slick-track {
+    padding-bottom: 80px;
+  }
+  #homeBlogs .slick-track {
+    padding-bottom: 100px;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,73 @@
+/* @tailwind base; */
+@tailwind components;
+/* @tailwind utilities; */
+
+@layer components {
+    .card {
+        background-color: theme('colors.white');
+        border-radius: theme('borderRadius.lg');
+        padding: theme('spacing.8');
+        box-shadow: theme('boxShadow.3xl');
+        margin: theme('spacing.6');
+    }
+
+    .btn-primary {
+        /* @apply bg-gradient-to-b from-[#245272] to-[#147887] text-white p-2 px-4 flex items-center text-sm rounded-lg; */
+        @apply bg-highlight text-white p-1 px-4 flex items-center text-sm rounded-lg;
+    }
+
+    .btn-theme {
+        @apply rounded-lg text-white px-3 py-1 text-sm bg-theme;
+    }
+    .btn-highlight {
+        @apply rounded-lg text-white bg-highlight px-3 py-1 border-0
+    }
+
+    button:hover {
+        @apply scale-105 transition-transform duration-300 ease-in-out;
+      }
+
+    .btn-highlight:hover {
+        background-color: #cc5200; /* hover background color */
+      }
+
+    /* .btn-theme:hover {
+        @apply rounded-lg text-white px-3 py-2 text-sm bg-gradient-to-b from-[#07869B] to-[#85c6fb];
+    } */
+
+    p {
+        /* @apply text-base */
+    }
+
+    #qualification h3 {
+        @apply text-highlight;
+    }
+
+    #qualification ul {
+        @apply list-disc my-3 ps-4 text-sm;
+    }
+
+    #about .doctorAbout p {
+        @apply mb-3;
+    }
+    .btn-theme-gradient {
+        @apply bg-theme-gradient text-white;
+    }
+    .btn-theme-gradient:hover {
+        /* @apply bg-theme-gradient-hover; */
+    }
+    .btn-theme-gradient2 {
+        @apply bg-theme-gradient2;
+    }
+    .btn-theme-gradient2:hover {
+        @apply bg-theme-gradient2-hover;
+    }
+
+    .banner-border-bottom {
+        @apply border-b-4 border-highlight
+    }
+
+
+
+    /* ... */
+}

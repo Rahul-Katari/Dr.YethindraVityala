@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #029ee8;
+    --secondary-color: #6c757d;
+    --highlight: #009a88;
+    --theme: #ff7c17;
+    --footer-highlight: #FF744B;
+    --banner-bg: #F2F8F7;
+    --content: #545454;
+    --appointment-input: #5F5F5F;
+    --header: #134E91;
+    --content2 :#0B2A46;
+    --content3 : #226FB5;
+    /* Add more variables as needed */
+}

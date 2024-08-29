@@ -1,0 +1,176 @@
+/* overriding react tabs scrollable css  */
+.rts___btn {
+  border-radius: 5px !important;
+  background-color: rgba(230, 230, 230, 0.6) !important;
+  border: 0px !important;
+}
+
+.rts___tab {
+  padding: 10px 15px !important;
+}
+
+.rts___tab___selected,
+.rts___nav___btn:hover {
+  background: #eb5e21 !important;
+  color: #fff;
+}
+
+.rts___nav___btn {
+  padding: 5px;
+  background: none !important;
+}
+
+.rts___nav___btn___container {
+  padding: 20px;
+}
+
+/* facilities css goes here  */
+
+.facilities-main-div {
+  .rts___tab___selected,
+  .rts___nav___btn:hover,
+  .rts___btn:hover {
+    background: linear-gradient(270deg, #00b38d 0%, #144d91 100%) !important;
+    color: #fff;
+  }
+
+  .rts___btn {
+    border-radius: 5px !important;
+    background-color: transparent !important;
+    border: 1px solid #000 !important;
+  }
+
+  .rts___tabs___container {
+    justify-content: center;
+  }
+}
+
+.doctor-details .rts___tabs,
+.excellence-details .rts___tabs {
+  /* flex-direction: column; */
+}
+
+.excellence-details .excellence-content-tabs .rts___tabs {
+  flex-direction: row;
+}
+
+.excellence-details .excellence-content-tabs .rts___nav___btn___container {
+  display: none;
+}
+
+.doctor-details .rts___tabs .rts___btn,
+.excellence-details .rts___tabs .rts___btn {
+  /* border-radius: 0px !important; */
+}
+
+.excellence-details .rts___tabs___container {
+  padding: 0px;
+  display: block;
+}
+
+.doctor-details .rts___tab.rts___btn.rts___tab___selected,
+.doctor-details
+  .rts___btn:hover
+  .excellence-details
+  .rts___tab.rts___btn.rts___tab___selected,
+.excellence-details .rts___btn:hover {
+  /* background: linear-gradient(270deg, #00637b 0%, #00a0c6 100%) !important; */
+  color: #fff;
+  /* border-radius: 0px 15px 15px 0px !important;j */
+}
+.patients-visitors .rts___tabs___container {
+  padding: 0px;
+}
+
+.patients-visitors,
+.excellence-content-tabs {
+  .rts___tabs {
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--theme);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .rts___tab {
+    margin: 0px;
+    /* flex: 1; */
+    padding: 10px 20px !important;
+  }
+
+  .rts___btn {
+    /* border: 1px solid #ccc !important; */
+    /* border-radius: 0px !important; */
+    background: transparent !important;
+    color: #fff;
+  }
+
+  /* .rts___btn:hover {
+        color: #fff;
+        background: linear-gradient(270deg, #00B38D 0%, #144D91 100%)!important;
+    } */
+
+  .rts___tab___selected,
+  .rts___btn:hover {
+    color: #fff;
+    /* background: linear-gradient(270deg, #00b38d 0%, #144d91 100%) !important; */
+    background: var(--highlight) !important;
+    border: 0px !important;
+  }
+}
+.all-services {
+  .rts___tab___selected.rts___btn,
+  .rts___btn:hover {
+    background: #fff !important;
+    color: inherit !important;
+    border: 1px solid #fff !important;
+  }
+  .rts___btn {
+    background: transparent;
+    border: 1px solid #000 !important;
+  }
+}
+.health-talk-tabs {
+  .rts___tab {
+    background-color: #eb5e21 !important;
+    color: #fff;
+    padding: 7px 20px !important;
+    min-width: 100px;
+  }
+  .rts___tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow: auto;
+  }
+  .rts___tabs___container {
+    margin-bottom: 20px;
+    /* display: none; */
+  }
+  .rts___nav___btn___container {
+    display: none;
+  }
+}
+
+/* CSS for mobile devices only */
+@media only screen and (max-width: 767px) {
+  .rts___btn {
+    font-size: 14px !important;
+  }
+
+  .rts___tab {
+    padding: 5px 15px !important;
+  }
+
+  .rts___nav___btn___container {
+    padding: 10px;
+  }
+
+  /* health-talk-tabs */
+  .health-talk-tabs .rts___tab {
+    padding: 5px 20px !important;
+    margin: 0px 10px;
+    background-color: #eb5e21 !important;
+  }
+}
