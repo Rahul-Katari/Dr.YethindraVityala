@@ -130,7 +130,7 @@ const Homepage = () => {
         </div>
 
         <section>
-          <div className="bg-banner rounded font-medium max-w-6xl grid md:grid-cols-4 grid-cols-2 items-center gap-y-12 container p-12 relative">
+          <div className="bg-banner rounded font-medium max-w-6xl grid md:grid-cols-4 grid-cols-2 items-center gap-y-12 container p-12 relative max-sm:mt-5">
             {bottomBanner.map((banner, index) => {
               return (
                 <IconText
@@ -147,7 +147,6 @@ const Homepage = () => {
         {/* about section starts  */}
         <section>
           <div
-            // style={{ backgroundImage: `url(${aboutBg.src})` }}
             className="bg-no-repeat bg-cover bg-[#dbecf7] mt-[-80px] pt-32"
           >
             <div className="max-w-7xl grid lg:grid-cols-11 gap-10 mobile-gap-x container pt-5 items-center">
@@ -174,35 +173,6 @@ const Homepage = () => {
         </section>
         {/* about section ends */}
 
-        {/* tabs  */}
-        {/* <section>
-          <div className="bg-theme pb-28 pt-4">
-            <Heading text={"Our Services"} center={true} color={"white"} />
-            <p className="max-w-2xl mx-auto text-white mobile-gap-x">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys{" "}
-            </p>
-          </div>
-          <div className="max-w-7xl container mt-[-140px] mobile-gap-x" data-aos="fade-up">
-            <AutoRotatingTabs />
-          </div>
-        </section> */}
-
-        {/* new patients appointments banner start */}
-        <section className="mt-0">
-          <div>
-            {/* <NewAppointments /> */}
-          </div>
-        </section>
-        {/* new patients appointments banner end */}
-
-        {/* Our doctors section starts  */}
-        {/* <section style={{ backgroundImage: `url(${ourDoctorsBg.src})` }} className="bg-no-repeat bg-cover">
-          <div className="know-about">
-            <KnowAboutSlider />
-          </div>
-        </section> */}
-        {/* Our doctors section ends */}
 
         {/* Health talks section starts */}
         <HealthTalks />

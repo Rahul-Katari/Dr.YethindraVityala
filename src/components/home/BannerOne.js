@@ -65,7 +65,6 @@ const BannerOne = () => {
             />
             <h3 className="md:text-4xl text-xl font-semibold"></h3>
             <div className="md:hidden">
-            <Image src={doctor} width={500} height={300} />
             <Image src={doctor.src} width={500} height={300} />
             </div>
             <h2 className="md:text-4xl text-xl font-semibold text-highlight md:mt-5">

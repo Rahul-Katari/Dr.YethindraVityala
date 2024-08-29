@@ -57,12 +57,12 @@ const navigation = [
   //   desktopNav: true,
   // },
   { name: "Blogs", href: "#", current: false, desktopNav: true },
-  {
-    name: "Privacy Policy",
-    href: "#",
-    current: false,
-    desktopNav: false,
-  },
+  // {
+  //   name: "Privacy Policy",
+  //   href: "#",
+  //   current: false,
+  //   desktopNav: false,
+  // },
   // { name: "Careers", href: "/careers", current: false, desktopNav: false },
   // {
   //   name: "Patients & Visitors",
@@ -150,9 +150,9 @@ const Navbar = () => {
         <>
           <div className="mx-auto lg:p-3 lg:px-1 relative">
             <div className="text-white lg:hidden">
-              <div className="py-2 bg-theme-gradient text-center text-sm">
+              {/* <div className="py-2 bg-theme-gradient text-center text-sm">
                 Contact Number: <a href="tel:+918885544844">8 1 0 6 5 2 5 6 2 1 </a>
-              </div>
+              </div> */}
               <div className="">{/* <NavSlider /> */}</div>
             </div>
             <div className="flex lg:h-16 items-center justify-between p-2">
@@ -177,7 +177,7 @@ const Navbar = () => {
                   <IconMenu2 aria-hidden="true" className="h-6 w-6" />
                 </button>
                 <div>
-                  <AppointmentModalOpener button={"Appointment"} />
+                  {/* <AppointmentModalOpener button={"Appointment"} /> */}
                 </div>
               </div>
 
@@ -322,7 +322,7 @@ const Navbar = () => {
                             (item.href === "/" && pathname === "/") ||
                               (item.href !== "/" && item.href === pathname) ||
                               (pathname?.includes(item.href) && item.href !== "/")
-                              ? "text-navHighlight"
+                              ? "text-black"
                               : "text-gray-200"
                           )}
                         >
@@ -356,7 +356,7 @@ const Navbar = () => {
                     ))}
                   </div>
                 </div>
-                <div className="items-center p-3"><h5 className="font-semibold mb-2 text-center text-highlight">Contact Number:</h5><div className="bg-theme font-medium m-auto px-2 rounded-md text-center text-lg text-white w-fit"><a href="tel:+918885544844">+91 88855 44844</a></div></div>
+                <div className="items-center p-3"><h5 className="font-semibold mb-2 text-center text-highlight">Contact Number:</h5><div className="bg-theme font-medium m-auto px-2 rounded-md text-center text-lg text-white w-fit"><a href="tel:+919999999999">+91 99999 99999</a></div></div>
               </DialogPanel>
             </div>
           </Dialog>

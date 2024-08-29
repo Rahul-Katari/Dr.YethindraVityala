@@ -35,8 +35,8 @@ import { usePathname } from "next/navigation";
 
 const quickLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "Blogs", href: "/blogs" },
+  { name: "About Us", href: "#" },
+  { name: "Blogs", href: "#" },
   // { name: "Health Talk", href: "/healthTalk" },
 ];
 const services = [
