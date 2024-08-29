@@ -16,7 +16,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block" }}
+      style={{ ...style, display: "none" }}
       onClick={onClick}
     >
       <IconArrowRight stroke={2} size={40} className="p-3" />
@@ -29,7 +29,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block" }}
+      style={{ ...style, display: "none" }}
       onClick={onClick}
     >
       <IconArrowLeft stroke={2} size={40} className="p-3" />
@@ -39,7 +39,7 @@ function SamplePrevArrow(props) {
 
 export default function HomeBannerSlider() {
   var settings = {
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     infinite: true,
     speed: 500,

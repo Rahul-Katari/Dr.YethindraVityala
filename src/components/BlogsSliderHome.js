@@ -51,7 +51,7 @@ function BlogsSlider({ slides }) {
     dots: false,
     infinite: true,
     slidesToShow: 3,
-    speed: 500,
+    speed: 1000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     // rtl: true,

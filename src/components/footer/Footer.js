@@ -115,7 +115,7 @@ const Footer = () => {
                     </p>
                     <a
                       href="mailto:dryethindravityala@gmail.com"
-                      className="flex gap-5 hover:text-theme hover:font-medium mt-5"
+                      className="inline-flex gap-5 hover:text-theme hover:font-medium mt-5"
 
                     >
                       <IconMailFilled />

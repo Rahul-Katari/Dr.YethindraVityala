@@ -17,7 +17,7 @@ const BlogsPageCard = ({ blogData, slider }) => {
   return (
     <Link href={blogData?.Image ? `/blogsDetail/${blogData?.slug_name}` : blogData?.video_link}
       target={blogData?.Image ? "" : "_blank"}
-      className={`bg-white p-3 rounded-lg shadow-blog flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 ${slider && "m-1"}`}
+      className={`bg-white h-full p-3 rounded-lg shadow-blog flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 ${slider && "m-1"}`}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
